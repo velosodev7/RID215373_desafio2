@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "montserat";
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+header h1 {
+    margin: 0;
+    padding: .5rem;
+    padding-left: 11%;
+    background-color: #02A28F;
+    color: white;
+    font-size: 2rem;
+    top: 0;
+    font-weight: bold;
+}
+
+.top-section {
+    display: flex;
+    gap: 1.5rem;
+    max-width: 75rem;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+    align-items: stretch;
+}
+
+.highlight {
+    flex: 2;
+    position: relative;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.highlight {
+    position: relative;
+    width: 100%;
+    height: 23rem;
+}
+
+.highlight img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    filter: brightness(0.6);
+}
+
+.highlight .text {
+    position: absolute;
+    bottom: 1rem;
+    left: 2.5rem;
+    color: white;
+    z-index: 1;
+}
+
+.highlight .dark-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 1rem;
+    pointer-events: none;
+}
+
+.text {
+    line-height: 1rem;
+}
+
+.text h2 {
+    font-size: 2rem;
+}
+
+.text p {
+    font-size: 1rem;
+}
+
+.popular-posts {
+    flex: 1;
+    border-radius: 1rem;
+    font: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popular-posts h3 {
+    background-color: #02A28F;
+    padding: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 1rem;
+    margin: 0 0 1rem 0;
+}
+
+.post-sidebar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color:#fff ;
+    border-radius: 10px;
+}
+
+.post-sidebar img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    object-fit: cover;
+}
+
+.text-post h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.text-post p {
+    color: #8a8a8a;
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+
+.bottom-section {
+    display: flex;
+    gap: 1.5rem;
+    max-width: 75rem;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+
+.posts-section {
+    flex: 2;
+}
+
+.titilePost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #02A28F;
+    padding: 1rem;
+    color: #fff;
+    border-radius: 1rem;
+    margin: 0 0 1rem 0;
+}
+
+.titilePost h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.titilePost a {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.posts {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.post {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.post img {
+    width: 100%;
+    height: fit-content;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.categories {
+    flex: 1;
+    border-radius: 1rem;
+    height: fit-content;
+    background-color: #fff;
+}
+
+.titileCategories h2 {
+    font-size: 1rem;
+    background-color: #02A28F;
+    padding: 1rem;
+    color: #fff;
+    border-radius: 1rem;
+    margin: 0 0 1rem 0;
+}
+
+.categoria {
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.categoria h3 {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 600;
+    color: #616161;
+}
+
+.categoria p {
+    color: #8a8a8a;
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #02A28F;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .top-section {
+        flex-direction: column;
+    }
+
+    .highlight {
+        flex: 1;
+    }
+
+    .popular-posts {
+        flex: 1;
+        
+    }
+
+    .bottom-section {
+        flex-direction: column;
+    }
+
+    .posts {
+        grid-template-columns: 1fr;
+    }
+
+    .categories {
+        margin-top: 20px;
+    }
+
+    .text {
+        line-height: 30px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+}
