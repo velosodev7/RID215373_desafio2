@@ -1,0 +1,1 @@
+blogresponsivo97.netlify.app
