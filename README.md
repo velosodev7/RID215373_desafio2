@@ -1,1 +1,1 @@
-blogresponsivo97.netlify.app
+URL SITE: blogresponsivo97.netlify.app
